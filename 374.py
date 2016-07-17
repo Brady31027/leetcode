@@ -1,16 +1,13 @@
-# The guess API is already defined for you.
-# @param num, your guess
-# @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
-# def guess(num):
-
 class Solution(object):
     def guessNumber(self, n):
-        n_div_by_2 = int(n/2) #force to trancate
-        ret = guess(n_div_by_2)
+        local_min, local_max = 1, n
+        guess_num = int((local_min + local_max)/2)
+        ret = guess(guess_num)
         while ret != 0:
-            if ret == -1: # guess is lower
-                n_div_by_2 = int((n + n_div_by_2) / 2)
-            elif ret == 1: # guess is higher
-                n_div_by_2 = int(n_div_by_2/2)
-            ret = guess(n_div_by_2)
-        return n_div_by_2;
+            if ret == 1: # guess is lower
+                local_min = guess_num
+            elif ret == -1: # guess is higher
+                local_max = guess_num
+            guess_num = int((local_min + local_max)/2)
+            ret = guess(guess_num)
+        return guess_num
