@@ -1,6 +1,3 @@
-
-from itertools import combinations
-
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -8,6 +5,13 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        result_hash = {}
+        for i in range(len(nums)):
+            first_num = nums[i]
+            if target - first_num in result_hash:
+                return [i, result_hash[target - first_num] ]
+            result_hash[ first_num ] = i
+        """    
         for comb in combinations(nums, 2):
             if comb[0] + comb[1] == target:
                 first, second = nums.index(comb[0]), nums.index(comb[1])
@@ -16,3 +20,4 @@ class Solution(object):
                 else:
                     nums.remove(comb[0])
                     return [first, nums.index(comb[1])+1]
+        """
