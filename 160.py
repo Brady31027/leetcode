@@ -9,14 +9,12 @@ class Solution(object):
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        dict_table = {}
-        node = headA
-        while node != None:
-            dict_table[node] = node.val
-            node = node.next
-        node2 = headB
-        while node2 != None:
-            if node2 in dict_table.keys():
-                return node2
-            node2 = node2.next
+        set_table = set()
+        while headA:
+            set_table.add(headA)
+            headA = headA.next
+        while headB:
+            if headB in set_table:
+                return headB
+            headB = headB.next
         return None
