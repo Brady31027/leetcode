@@ -17,4 +17,5 @@ class Solution(object):
             l_node.append(node.val)
             node = node.next
         l_reverse_node = l_node[::-1]
-        return False if l_node != l_reverse_node else True
+        #return False if l_node != l_reverse_node else True
+	return l_node == l_reverse_node # much faster
