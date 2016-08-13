@@ -11,6 +11,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        """
         # Top-Down recusion: straight forward 
         if root is None: return True
         
@@ -20,5 +21,16 @@ class Solution(object):
         return True if abs( getDepth(root.left) - getDepth(root.right) ) <= 1 and \
                        self.isBalanced(root.left) and self.isBalanced(root.right) \
                        else False
+        """
         # TODO: Bottom-Up recursion : fast
+        def getHeight(root):
+            if root is None: return 0
+            leftHeight = getHeight(root.left)
+            if leftHeight < 0: return -1
+            rightHeight = getHeight(root.right)
+            if rightHeight < 0: return -1
+            return -1 if ( abs(leftHeight - rightHeight) > 1 ) else max(leftHeight, rightHeight) + 1
+        
+        return getHeight(root) >= 0
+
         
