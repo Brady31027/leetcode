@@ -10,17 +10,11 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        if root is None:
-            return root
-        visited, queue, result = set(), [root], []
+        if root is None: return root
+        queue = [root]
         while queue:
             node = queue.pop(0)
-            if node not in visited:
-                visited.add(node)
-                result.append(node)
-                node.left, node.right = node.right, node.left
-                if node.left != None:
-                    queue.append(node.left)
-                if node.right != None:
-                    queue.append(node.right)
-        return result[0]
+            node.left, node.right = node.right, node.left
+            if node.left != None: queue.append(node.left)
+            if node.right != None: queue.append(node.right)
+        return root
