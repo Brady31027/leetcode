@@ -11,16 +11,13 @@ class Solution(object):
         :type H: int
         :rtype: int
         """
-        # do we need to handle flip?
         # first rectangle
         a = (C-A) * (D-B)
         # second rectangle
         b = (G-E) * (H-F)
         # overlap area
         c = 0
-        if C <= E or A >= G or B >= H or F >= D:
-            c = 0
-        else:
+        if C > E and A < G and B < H and F < D:
             max_x1 = max(A, E)
             max_y1 = max(B, F)
             min_x2 = min(C, G)
