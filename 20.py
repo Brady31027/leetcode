@@ -1,4 +1,4 @@
-ss Solution(object):
+class Solution(object):
     
     def isValid(self, s):
         # can not handle other char or nested parentheses
