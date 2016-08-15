@@ -1,4 +1,4 @@
-import math
+#https://discuss.leetcode.com/topic/8692/o-n-time-o-1-space-fastest-solution
 
 class Solution(object):
     def majorityElement(self, nums):
@@ -6,14 +6,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if len(nums) == 1:
-            return nums[0]
-        target = math.floor(len(nums) / 2)
-        dict_nums = {}
-        for i in nums:
-            if i in dict_nums:
-                dict_nums[i] += 1
-                if dict_nums[i] > target:
-                    return i
-            else:
-                dict_nums[i] = 1
+        major, count = nums[0], 1
+        for i in range(1, len(nums)):
+            if count == 0: major, count = nums[i], 1
+            elif nums[i] == major: count += 1
+            else: count -= 1
+        return major
