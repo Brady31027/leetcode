@@ -11,23 +11,11 @@ class Solution(object):
         :rtype: ListNode
         """
         if n == 0 or head is None: return head
-        
-        list_len = 0
-        cur = head
-        while cur is not None:
-            list_len += 1
-            cur = cur.next
-        cut_idx = 0
-        cut_target = list_len - n - 1
-        
-        if cut_target < 0: 
-            head = head.next
-            return head
-        
-        cur = head
-        while cur is not None:
-            if cut_idx == cut_target:
-                cur.next = cur.next.next
-            cut_idx += 1
-            cur = cur.next
-        return head
+        dummy = ListNode(0)
+        dummy.next = head
+        first, second = dummy, dummy
+        for i in range(n): first = first.next
+        while first.next is not None:
+            first, second = first.next, second.next
+        second.next = second.next.next
+        return dummy.next
