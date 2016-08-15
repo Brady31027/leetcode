@@ -4,9 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        ret = 0
-        cnt = len(s)
-        for c in s:
-            ret += ( ord(c) - ord('A') + 1 ) * (26 ** (cnt - 1) )
-            cnt -= 1
-        return ret
+        ans = 0
+        for e in s:
+            ans = ans * 26 + ord(e) - ord('A') + 1
+        return ans
