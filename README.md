@@ -1,5 +1,5 @@
-This folder contains solutions for Leetcode OJ easy problems.
+This folder contains solutions for Leetcode OJ easy/medium problems.
 
-Current solutions are written in Python. C/C++ version will be provided ASAP.
+Current solutions are written in Python. Other version will be provided ASAP.
 
                                                    --Brady
