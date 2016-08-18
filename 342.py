@@ -1,11 +1,10 @@
 class Solution(object):
-    def isPowerOfFour(self, num):
-        """
-        :type num: int
-        :rtype: bool
-        """
-        POWER_OF_FOUR_MSK = 0x55555555
-        if (num > 0) and (num & (num-1) == 0) and (num & POWER_OF_FOUR_MSK !=0):
-            return True
-        else:
-            return False
+    """
+    https://discuss.leetcode.com/topic/53627/python-solution-beats-90-list-16-possible-power-of-4-in-all-32-bit-integers/2
+    """
+    def isPowerOfFour(self, n):
+        str_hex = str(hex(n)[2:])
+        if str_hex[0] != '1' and str_hex[0] != '4': return False
+        for i in xrange(1, len(str_hex)):
+            if str_hex[i] != '0': return False
+        return True
