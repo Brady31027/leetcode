@@ -4,13 +4,12 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        MAX_INT = 2147483647
-        MIN_INT = -2147483648
-        neg = True if x < 0 else False
-        str_input = str(x)
-        if neg == True:
-            str_input = '-'+str_input[:0:-1]
-            return 0 if int(str_input) < MIN_INT else int(str_input)
-        else:
-            str_input = str_input[::-1]
-            return 0 if int(str_input) > MAX_INT else int(str_input)
+        neg, result = False, 0
+        if x < 0:
+            x = -x
+            neg = True
+        while x > 0:
+            result = result * 10 + x % 10
+            x = int(x/10)
+            if result > (2**31) - 1 or result < -(2 ** 31): return 0
+        return result if neg == False else -result
