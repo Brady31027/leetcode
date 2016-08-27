@@ -1,47 +1,24 @@
 class Solution(object):
-    MAX_INT = (2 ** 31) - 1
-    MIN_INT = -(2 ** 31)
     def divide(self, dividend, divisor):
         """
         :type dividend: int
         :type divisor: int
         :rtype: int
         """
+        MIN_INT, MAX_INT = -(2**31), 2**31 -1
+        minus, result = False, 0
+        
         if divisor == 0: return -1
-        elif dividend == 0: return 0
-        elif divisor == 1: 
-            if dividend > 0: return dividend if dividend < self.MAX_INT else self.MAX_INT
-            else: return dividend if dividend > self.MIN_INT else self.MIN_INT
-        elif divisor == -1:
-            if dividend > 0: return -dividend if -dividend > self.MIN_INT else self.MIN_INT
-            else: return -dividend if -dividend < self.MAX_INT else self.MAX_INT
-        
-        neg = False
-        
-        if divisor > self.MAX_INT: divisor = self.MAX_INT
-        elif divisor < self.MIN_INT: divisor = self.MIN_INT
-        
-        if dividend > self.MAX_INT: dividend = self.MAX_INT
-        elif dividend < self.MIN_INT: dividend = self.MIN_INT
-        
-        if dividend < 0 and divisor < 0:
-            dividend = -dividend
-            divisor = -divisor
-        elif dividend > 0 and divisor < 0:
-            divisor = -divisor
-            neg = True
-        elif dividend < 0 and divisor > 0:
-            dividend = -dividend
-            neg = True
-        
-        if dividend < divisor: return 0
-        
-        ans = 0
-        while dividend >= divisor:
-            dividend -= divisor
-            ans += 1
-            if ans > self.MAX_INT: return self.MAX_INT
-        
-        return ans if neg == False else -ans
-            
-            
+        if dividend == 0: return 0
+        if (divisor > 0 and dividend < 0) or (divisor < 0 and dividend > 0): minus = True
+        if divisor < 0: divisor = -divisor
+        if dividend < 0: dividend = -dividend
+        for i in range(32):
+            result = result << 1
+            if (dividend >> (31-i) ) >= divisor:
+                dividend -= (divisor << (31 - i))
+                result += 1
+        if minus: 
+            result = -result
+            return result if result > MIN_INT else MIN_INT
+        else: return result if result < MAX_INT else MAX_INT
