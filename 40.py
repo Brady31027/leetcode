@@ -1,18 +1,12 @@
-
-from itertools import combinations
 class Solution(object):
+    ll_ans = []
+    def dfs(self, candidates, target, start, l_ans):
+        if target == 0 and l_ans not in self.ll_ans: return self.ll_ans.append(l_ans)
+        for i in range(start, len(candidates)): 
+            if candidates[i] > target: return
+            self.dfs(candidates, target - candidates[i], i + 1, l_ans + [candidates[i]])
     def combinationSum2(self, candidates, target):
-        """
-        :type candidates: List[int]
-        :type target: int
-        :rtype: List[List[int]]
-        """
-        l_ans = []
-        l_candidates = [x for x in candidates if x <= target]
-        l_candidates.sort()
-        for i in range(len(l_candidates)+1):
-            for c in combinations(l_candidates, i):
-                total = sum(c)
-                if total == target and list(c) not in l_ans: l_ans.append(list(c))
-        return l_ans
-        
+        self.ll_ans = []
+        candidates.sort()
+        self.dfs(candidates, target, 0, [])
+        return self.ll_ans
