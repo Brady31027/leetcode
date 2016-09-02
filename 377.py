@@ -7,9 +7,17 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        def helper(nums, target):
+            if dp[target] != -1: return dp[target]
+            comb = 0
+            for i in xrange(len(nums)):
+                if nums[i] <= target:
+                    comb += helper(nums, target - nums[i])
+            dp[target] = comb
+            return comb
+            
         if target == 0: return 1
-        comb = 0
-        for i in xrange(len(nums)):
-            if target >= nums[i]:
-                comb += self.combinationSum4(nums, target - nums[i])
+        dp = [-1] * (target + 1)
+        dp[0] = 1
+        comb = helper(nums, target)
         return comb
