@@ -4,8 +4,10 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        perfect_square = 0
-        for i in range(1, n+1):
-            if int(math.sqrt(i)+0.5) ** 2 == i:
+        i, perfect_square = 1, 0
+        while i < n + 1:
+            if i ** 2 < n + 1:
                 perfect_square += 1
+            else: break
+            i += 1
         return perfect_square
