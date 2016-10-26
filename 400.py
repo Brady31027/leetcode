@@ -4,10 +4,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        l_long_str = ''
-        counter = 0
-        for i in xrange(1, n+1):
-            l_long_str += str(i)
-            counter += int(math.log10(i)) + 1
-            if counter >= n: break
-        return int(l_long_str[n-1])
+        digit_len = 1
+        for i in range(1024): # what is the exact value?
+            start = 9 * 10 ** i
+            if start * (i+1) >= n: break
+            n -= start * (i+1)
+            digit_len += 1
+        hold_num = 10**i + (n-1) // digit_len
+        hold_digit = (n-1) % digit_len
+        return int(str(hold_num)[hold_digit])
+
