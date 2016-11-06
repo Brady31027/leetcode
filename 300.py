@@ -11,5 +11,4 @@ class Solution(object):
         for i in xrange(size):
             for j in xrange(i+1, size):
                 if nums[j] > nums[i]: l_len[j] = max(l_len[j], l_len[i]+1)
-        l_len.sort()
-        return l_len[-1]
+        return max(l_len)
