@@ -11,16 +11,15 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
-        l_ans, l_stack = [], []
+        prev, l_stack = -9999999999999, []
         while root or l_stack:
             if root:
                 l_stack.append(root)
                 root = root.left
             else:
                 root = l_stack.pop()
-                l_ans.append(root.val)
+                if prev >= root.val: return False
+                prev = root.val
                 root = root.right
-        for i in xrange(1, len(l_ans)):
-            if l_ans[i] <= l_ans[i-1]: return False
         return True
             
