@@ -19,7 +19,6 @@ class Solution(object):
             traversal(root.left, l_ans)
             traversal(root.right, l_ans)
             l_ans.append(root.val)
-            return l_ans
         
         traversal(root, l_ans)
         return l_ans
