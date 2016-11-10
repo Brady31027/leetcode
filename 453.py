@@ -6,10 +6,7 @@ class Solution(object):
         """
         if len(nums) == 1: return 0
         size, cnt = len(nums), 0
-        nums.sort()
-        while len(set(nums)) > 1:
-            for i in xrange(size-1):
-                nums[i] += 1
-            cnt += 1
-            nums.sort()
+        min_val = min(nums)
+        for n in nums:
+            cnt += (n - min_val)
         return cnt
