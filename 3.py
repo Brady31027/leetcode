@@ -4,9 +4,12 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        l_c, max_len, j = [], 0, 0
-        for i in xrange(len(s)):
-            while s[i] in l_c[j:]: j += 1
-            l_c.append(s[i])
-            if i - j + 1 > max_len: max_len = i - j + 1
+        dict_c, start, end, max_len = {}, 0, 0, 0
+        for c in s:
+            end += 1
+            dict_c[c] = dict_c.get(c, 0) + 1
+            while dict_c[c] > 1:
+                dict_c[s[start]] -= 1
+                start += 1
+            max_len = max(max_len, end - start)
         return max_len
