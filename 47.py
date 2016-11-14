@@ -9,9 +9,12 @@ class Solution(object):
         elif size == 1: return [nums]
         else:
             ll_ans = []
+            prev_anchor = None
+            nums.sort()
             for i in xrange(size):
+                if prev_anchor == nums[i]: continue
+                prev_anchor = nums[i]
                 for j in self.permuteUnique(nums[:i]+nums[i+1:]):
                     l_tmp = [nums[i]] + j
-                    if l_tmp in ll_ans: continue
                     ll_ans.append(l_tmp)
         return ll_ans
