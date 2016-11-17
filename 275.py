@@ -4,8 +4,12 @@ class Solution(object):
         :type citations: List[int]
         :rtype: int
         """
-        h_idx = 0
-        citations.sort(reverse=True)
-        for i, v in enumerate(citations):
-            if (i+1) <= v: h_idx = max(h_idx, i+1)
-        return h_idx
+        size = len(citations)
+        if size == 0: return 0
+        elif size == 1: return min(size, citations[0])
+        left, right = 0, size
+        while left < right:
+            mid = (left + right) // 2
+            if size - mid <= citations[mid]: right = mid
+            else: left = mid + 1
+        return size - left
