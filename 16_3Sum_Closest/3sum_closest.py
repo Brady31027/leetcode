@@ -1,4 +1,3 @@
-#performance tuning
 class Solution(object):
     def threeSumClosest(self, nums, target):
         """
@@ -20,16 +19,17 @@ class Solution(object):
                     head += 1
                 dis = abs(target - sum)
                 if dis < min_dis:
-                    ret_sum = sum
-                    min_dis = dis
+                    min_dis, ret_sum = dis, sum
             return ret_sum
             
         nums.sort()
-        closest_sum, min_dis = target, 2147483647
+        closest_sum, min_dis, prev_min_dis = target, 2147483647, 2147483647
         for i in range(len(nums)):
             if i == 0 or (i > 0 and nums[i] != nums[i - 1]):
                 sum = two_sum(nums[i], nums[i+1:], target)  
                 if sum is not None and abs(target - sum) < min_dis: 
                     closest_sum = sum
                     min_dis = abs(target - sum)
+                    if min_dis >= prev_min_dis: return closest_sum
+                    prev_min_dis = min_dis
         return closest_sum
