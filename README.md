@@ -8,4 +8,6 @@
 |16. 3 Sum Closest|||
 |18. 4 Sum|||
 |11. Container with Most Water|||
-
+|62. Unique Paths|https://github.com/Brady31027/leetcode/blob/master/reports/dynamic_programming.pdf||
+|63. Unique Paths II|||
+|64. Minimum Path Sum|||
