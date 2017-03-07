@@ -1,5 +1,3 @@
-This folder contains solutions for Leetcode OJ easy/medium problems.
-
-Current solutions are written in Python. Other version will be provided ASAP.
-
-                                                   --Brady
+|No.  | Problem   | Solution   | Report   | Present  |
+|:---:|:---------:|:----------:|:--------:|:--------:|
+|1    | Two Sum   |https://github.com/Brady31027/leetcode/tree/master/1_Two_Sum | https://github.com/Brady31027/leetcode/blob/master/reports/two_sums_series.pdf | 2017/03/06 |
