@@ -1,7 +1,7 @@
 **[Presentation Record]**
 
 | Report   | Present  |
-|:--------:|:--------:|
+|---------:|:--------:|
 | https://github.com/Brady31027/leetcode/blob/master/reports/two_sums_series.pdf | 2017/03/06 |
 |1.Two Sum, 167.Two Sum II ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/two_sums_series2.pdf | 2107/03/06 |
