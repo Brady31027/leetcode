@@ -12,4 +12,4 @@ class Solution(object):
         for i in range(1, len(state)):
             state[i] = max(state[i-1]-1, nums[i])
             if state[i] == 0: return False
-        return True if state[-1] > 0 else False
+        return True
