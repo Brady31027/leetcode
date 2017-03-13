@@ -10,3 +10,5 @@
 |62.Unique Paths, 63.Unique Paths II, 64.Minimum Path Sum||
 |https://github.com/Brady31027/leetcode/blob/master/reports/dynamic_programming_2.pdf|2017/03/09|
 |70.Climbing Stairs, 198.House Robber, 55.Jump Game||
+|https://github.com/Brady31027/leetcode/blob/master/reports/majority.pdf||
+|169.Majority Element, 229.Majority Element II||
