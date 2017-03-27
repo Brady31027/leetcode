@@ -7,15 +7,20 @@ class Solution(object):
         :rtype: int
         """
         if beginWord == endWord: return 1
-        queue = [(beginWord,1)]
-        while queue:
-            item = queue.pop(0)
-            word, depth = item[0], item[1]
-            if word == endWord: return depth
-            for i in range(len(word)):
-                for char in string.lowercase[:]:
-                    candidate = word[:i] + char + word[i+1:]
-                    if candidate in wordList:
-                        wordList.remove(candidate)
-                        queue.append((candidate, depth+1))
+        queue_top, queue_bottom, word_dict = set([beginWord]), set([endWord]), set(wordList)
+        word_length, depth, char_set = len(beginWord), 2, string.lowercase[:]
+        if endWord not in word_dict: return 0
+        while queue_top:
+            queue_bak = set()
+            for word in queue_top:
+                for i in range(word_length):
+                    for char in char_set:
+                        candidate = word[:i] + char + word[i+1:]
+                        if candidate in queue_bottom: return depth
+                        if candidate in word_dict: queue_bak.add(candidate)
+            queue_top = queue_bak
+            if len(queue_top) > len(queue_bottom):
+                queue_top, queue_bottom = queue_bottom, queue_top
+            depth += 1
+            word_dict -= queue_top
         return 0
