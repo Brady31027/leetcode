@@ -20,3 +20,5 @@
 |169.Majority Element, 229.Majority Element II | |
 | https://github.com/Brady31027/leetcode/blob/master/reports/bfs.pdf | |
 |102.Binary Tree Level Order Traversal, 107.Binary Tree Level Order Traversal II, 108.Binary Tree Zigzag Level Order Traversal, 127. Word Ladder, 130. Surrounding Regions, 133.Clone Graph, 207.Course Schedule, 210. Course Schedule II, 310. Minimum Height Trees| |
+|https://github.com/Brady31027/leetcode/blob/master/reports/easy_misc_part1.pdf ||
+|292.Nim Game, 500.Keyboard Row, 463.Island Perimeter, 448.Find All Numbers Disappeared in an Array, 520.Detect Capital ||
