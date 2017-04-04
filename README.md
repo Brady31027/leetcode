@@ -22,5 +22,7 @@
 |102.Binary Tree Level Order Traversal, 107.Binary Tree Level Order Traversal II, 108.Binary Tree Zigzag Level Order Traversal, 127. Word Ladder, 130. Surrounding Regions, 133.Clone Graph, 207.Course Schedule, 210. Course Schedule II, 310. Minimum Height Trees| |
 |https://github.com/Brady31027/leetcode/blob/master/reports/dfs.pdf ||
 |112.Path Sum, 113.Path Sum II, 199.Binary Tree Right Side View, 200.Number of Islands, 235.Lowest Common Ancestor of a Binary Search Tree, 236.Lowest Common Ancestor of a Binary Tree, 257.Binary Tree Paths, 332.Reconstruct Itinerary, 399.Evaluate Division, 417.Pacific Atlantic Water Flow, 464.Can I Win ||
+|https://github.com/Brady31027/leetcode/blob/master/reports/bst.pdf | |
+|220.Contains Duplicate III, 230.Kth Smallest Element in a BST, 449.Serialize and Deserialize BST, 450.Delete Node in a BST | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/easy_misc_part1.pdf ||
 |292.Nim Game, 500.Keyboard Row, 463.Island Perimeter, 448.Find All Numbers Disappeared in an Array, 520.Detect Capital ||
