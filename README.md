@@ -26,3 +26,5 @@
 |220.Contains Duplicate III, 230.Kth Smallest Element in a BST, 449.Serialize and Deserialize BST, 450.Delete Node in a BST | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/easy_misc_part1.pdf ||
 |292.Nim Game, 500.Keyboard Row, 463.Island Perimeter, 448.Find All Numbers Disappeared in an Array, 520.Detect Capital ||
+|https://github.com/Brady31027/leetcode/blob/master/reports/easy_misc_part2.pdf ||
+|459.Repeated Substring Pattern, 496.Next Greater Element I, 532.K-diff Pairs in an Array, 268,Missing Number, 504.Base 7 ||
