@@ -12,6 +12,8 @@
 |70.Climbing Stairs, 198.House Robber, 55.Jump Game ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/dynamic_programming_3.pdf ||
 |72.Edit Distance, 97.Interleaving String, 115.Distinct Subsequences  | |
+|https://github.com/Brady31027/leetcode/blob/master/reports/dynamic_programming_4.pdf ||
+|(Lintcode)92.Backpack, (Lintcode)125.Backpack II, (Lintcode)564.Backpack VI ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/dynamic_programming_5.pdf | N/A |
 |53.Maximum Subarray, 91.Decode Ways, 96.Unique Binary Search Tree, 120.Triangle, 139.Word Break, 152.Maximum Product Subarray, 215.House Robber II, 221. Maximal Square, 309.Best Time to Buy and Sell Stock with Cooldown, 322.Coin Change, 357.Count Numbers with Unique Digits, 368.Largest Divisible Subset, 375.Guess Number Higher or Lower II, 377.Combination Sum IV, 416.Partition Equal Subset Sum, 472.Concatenated Words, 474.Ones and Zeros, 467.Unique Substrings in Wraparound String | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/greedy.pdf | |
