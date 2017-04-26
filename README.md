@@ -18,7 +18,7 @@
 |53.Maximum Subarray, 91.Decode Ways, 96.Unique Binary Search Tree, 120.Triangle, 139.Word Break, 152.Maximum Product Subarray, 215.House Robber II, 221. Maximal Square, 309.Best Time to Buy and Sell Stock with Cooldown, 322.Coin Change, 357.Count Numbers with Unique Digits, 368.Largest Divisible Subset, 375.Guess Number Higher or Lower II, 377.Combination Sum IV, 416.Partition Equal Subset Sum, 472.Concatenated Words, 474.Ones and Zeros, 467.Unique Substrings in Wraparound String | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/greedy.pdf | |
 |455.Assign Cookie, 435.Non-Overlapping Intervals, 134.Gas Station, 122.Best Time to Buy and Sell Stock II, 452.Minimum Number of Arrows to Burst Balloons, 376.Wiggle Subsequence | |
-|https://github.com/Brady31027/leetcode/blob/master/reports/majority.pdf | |
+|https://github.com/Brady31027/leetcode/blob/master/reports/majority.pdf | 2017/04/26 |
 |169.Majority Element, 229.Majority Element II | |
 | https://github.com/Brady31027/leetcode/blob/master/reports/bfs.pdf | |
 |102.Binary Tree Level Order Traversal, 107.Binary Tree Level Order Traversal II, 108.Binary Tree Zigzag Level Order Traversal, 127. Word Ladder, 130. Surrounding Regions, 133.Clone Graph, 207.Course Schedule, 210. Course Schedule II, 310. Minimum Height Trees| |
