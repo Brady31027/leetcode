@@ -15,7 +15,7 @@
 |https://github.com/Brady31027/leetcode/blob/master/reports/dynamic_programming_4.pdf | 2017/04/24 |
 |(Lintcode)92.Backpack, (Lintcode)125.Backpack II, (Lintcode)564.Backpack VI ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/dynamic_programming_5.pdf | N/A |
-|53.Maximum Subarray, 91.Decode Ways, 96.Unique Binary Search Tree, 120.Triangle, 139.Word Break, 152.Maximum Product Subarray, 215.House Robber II, 221. Maximal Square, 309.Best Time to Buy and Sell Stock with Cooldown, 322.Coin Change, 357.Count Numbers with Unique Digits, 368.Largest Divisible Subset, 375.Guess Number Higher or Lower II, 377.Combination Sum IV, 416.Partition Equal Subset Sum, 472.Concatenated Words, 474.Ones and Zeros, 467.Unique Substrings in Wraparound String | |
+|53.Maximum Subarray, 91.Decode Ways, 96.Unique Binary Search Tree, 120.Triangle, 139.Word Break, 152.Maximum Product Subarray, 215.House Robber II, 221. Maximal Square, 309.Best Time to Buy and Sell Stock with Cooldown, 322.Coin Change, 357.Count Numbers with Unique Digits, 368.Largest Divisible Subset, 375.Guess Number Higher or Lower II, 377.Combination Sum IV, 416.Partition Equal Subset Sum, 472.Concatenated Words, 474.Ones and Zeros, 467.Unique Substrings in Wraparound String, 303.Range Sum Query - Immutable | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/greedy.pdf | |
 |455.Assign Cookie, 435.Non-Overlapping Intervals, 134.Gas Station, 122.Best Time to Buy and Sell Stock II, 452.Minimum Number of Arrows to Burst Balloons, 376.Wiggle Subsequence | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/majority.pdf | 2017/04/26 |
