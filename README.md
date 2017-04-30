@@ -26,6 +26,8 @@
 |112.Path Sum, 113.Path Sum II, 199.Binary Tree Right Side View, 200.Number of Islands, 235.Lowest Common Ancestor of a Binary Search Tree, 236.Lowest Common Ancestor of a Binary Tree, 257.Binary Tree Paths, 332.Reconstruct Itinerary, 399.Evaluate Division, 417.Pacific Atlantic Water Flow, 464.Can I Win ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/bst.pdf | |
 |220.Contains Duplicate III, 230.Kth Smallest Element in a BST, 449.Serialize and Deserialize BST, 450.Delete Node in a BST | |
+|https://github.com/Brady31027/leetcode/blob/master/reports/binary_tree.pdf | |
+|94.Binary Tree Inorder Traversal, 144.Binary Tree Preorder Traversal, 145.Binary Tree Postorder Traversal, 208.Implement Trie (Prefix Tree), 211.Add and Search Word, 226.Invert Binary Tree, 297.Serialize and Deserialize Binary Tree, 307.Range Sum Query - Mutable, 530.Minimum Absolute Difference in BST | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/easy_misc_part1.pdf ||
 |292.Nim Game, 500.Keyboard Row, 463.Island Perimeter, 448.Find All Numbers Disappeared in an Array, 520.Detect Capital ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/easy_misc_part2.pdf ||
