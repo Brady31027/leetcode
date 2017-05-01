@@ -20,7 +20,7 @@
 |455.Assign Cookie, 435.Non-Overlapping Intervals, 134.Gas Station, 122.Best Time to Buy and Sell Stock II, 452.Minimum Number of Arrows to Burst Balloons, 376.Wiggle Subsequence | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/majority.pdf | 2017/04/26 |
 |169.Majority Element, 229.Majority Element II | |
-| https://github.com/Brady31027/leetcode/blob/master/reports/bfs.pdf | |
+| https://github.com/Brady31027/leetcode/blob/master/reports/bfs.pdf | 2017/05/01 |
 |102.Binary Tree Level Order Traversal, 107.Binary Tree Level Order Traversal II, 108.Binary Tree Zigzag Level Order Traversal, 127. Word Ladder, 130. Surrounding Regions, 133.Clone Graph, 207.Course Schedule, 210. Course Schedule II, 310. Minimum Height Trees| |
 |https://github.com/Brady31027/leetcode/blob/master/reports/dfs.pdf ||
 |112.Path Sum, 113.Path Sum II, 199.Binary Tree Right Side View, 200.Number of Islands, 235.Lowest Common Ancestor of a Binary Search Tree, 236.Lowest Common Ancestor of a Binary Tree, 257.Binary Tree Paths, 332.Reconstruct Itinerary, 399.Evaluate Division, 417.Pacific Atlantic Water Flow, 464.Can I Win ||
