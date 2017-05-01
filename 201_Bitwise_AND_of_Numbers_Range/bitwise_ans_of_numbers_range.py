@@ -5,8 +5,6 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        ans = m
-        for number in range(m+1, n+1):
-            ans &= number
-        return ans
-        
+        while m < n:
+            n &= (n-1)
+        return n 
