@@ -8,7 +8,6 @@ class Solution(object):
         # current digit: a ^ b
         # carry digit: a & b
         MAX = 0x7FFFFFFF
-        MIN = 0x8FFFFFFF
         MSK = 0xFFFFFFFF
         
         while b != 0:
