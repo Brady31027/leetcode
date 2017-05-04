@@ -4,7 +4,7 @@ Example:
 Given a = 1 and b = 2, return 3.
 
 Note:
-<pre>
+```python
 max = 0x7FFFFFFF  # 1 * 31
 mask = 0xFFFFFFFF # 1 * 32
 a = -1    # 0b11111111111111111111111111111111
@@ -25,4 +25,4 @@ print "bin(c) = %s" % (bin(c)) # 10
 c = ~c # 1111111111111111111111111111111111111111111111111111111111111101
 # 2's comp of (-3) = comp(2) = comp(10) = 111...11101
 print "c = %d" %(c)
-</pre>
+```
