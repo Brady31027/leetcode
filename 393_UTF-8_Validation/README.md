@@ -14,4 +14,19 @@ This is how the UTF-8 encoding would work:
 </pre>
 Given an array of integers representing the data, return whether it is a valid utf-8 encoding.
 
+Example 1:
+<pre>
+data = [197, 130, 1], which represents the octet sequence: 11000101 10000010 00000001.
 
+Return true.
+</pre>
+It is a valid utf-8 encoding for a 2-bytes character followed by a 1-byte character.
+Example 2:
+<pre>
+data = [235, 140, 4], which represented the octet sequence: 11101011 10001100 00000100.
+
+Return false.
+</pre>
+The first 3 bits are all one's and the 4th bit is 0 means it is a 3-bytes character.
+The next byte is a continuation byte which starts with 10 and that's correct.
+But the second continuation byte does not start with 10, so it is invalid.
