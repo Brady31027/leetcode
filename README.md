@@ -32,3 +32,5 @@
 |292.Nim Game, 500.Keyboard Row, 463.Island Perimeter, 448.Find All Numbers Disappeared in an Array, 520.Detect Capital ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/easy_misc_part2.pdf ||
 |459.Repeated Substring Pattern, 496.Next Greater Element I, 532.K-diff Pairs in an Array, 268,Missing Number, 504.Base 7 ||
+|https://github.com/Brady31027/leetcode/blob/master/reports/bit_manipulation.pdf | |
+|136.Single Number, 137.Single Number II, 190.Reverse Bits, 191.Number of 1 Bits, 201.Bitwise AND of Number Range, 231.Power of Two, 260.Single Number III, 268.Missing Number, 318.Maximum Product of Word Lengths, 342.Power of Four, 371.Sum of Two Integers, 389.Find the Difference, 393.UTF-8 Validation, 401.Binary Watch, 421.Maximum XOR of Two Numbers in an Array, 461.Hamming Distance, 462.Minimum Moves to Equal Array Elements II, 477.Total Hamming Distance | |
