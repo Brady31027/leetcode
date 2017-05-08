@@ -1,3 +1,4 @@
+
 class Solution(object):
     def intersect(self, nums1, nums2):
         """
@@ -5,9 +6,4 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        ans = []
-        intersectionSet = set(nums1) & set(nums2)
-        for element in intersectionSet:
-            repeatCnt = min(nums1.count(element), nums2.count(element))
-            ans += [element] * repeatCnt
-        return ans
+        return list((collections.Counter(nums1) & collections.Counter(nums2)).elements())
