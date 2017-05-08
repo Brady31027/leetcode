@@ -11,9 +11,8 @@ class Solution(object):
         :rtype: bool
         """
         slowPtr, fastPtr = head, head
-        while slowPtr and fastPtr:
-            if not fastPtr.next or not fastPtr.next.next: return False
+        while fastPtr and fastPtr.next:
             slowPtr, fastPtr = slowPtr.next, fastPtr.next.next
-            if slowPtr.val == fastPtr.val: return True
+            if slowPtr is fastPtr: return True
         return False
         
