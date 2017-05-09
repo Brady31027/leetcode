@@ -7,3 +7,6 @@ Reverse a singly linked list.
 * 等號右邊是名詞
   * node1 = node2.next
   * next 當作 "next node" 
+  
+Follow up
+* How to solve it using recursive approach?
