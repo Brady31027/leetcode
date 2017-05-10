@@ -11,3 +11,6 @@ B:     b1 → b2 → b3
 </pre>
 
 begin to intersect at node c1.
+
+**Follow up**
+* How to solve in space O(1)?
