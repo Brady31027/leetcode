@@ -24,11 +24,9 @@ class Solution(object):
             current = (total + carry) % 10
             carry = (total + carry) / 10
             # add node to the tail
-            node = ListNode(current)
-            cursor.next = node
-            cursor = node
+            cursor.next = ListNode(current)
+            cursor = cursor.next
         # handle overflow carry digit    
         if carry > 0:
-            node = ListNode(carry)
-            cursor.next = node
+            cursor.next = ListNode(carry)
         return head.next
