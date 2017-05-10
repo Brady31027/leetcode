@@ -34,3 +34,5 @@
 |459.Repeated Substring Pattern, 496.Next Greater Element I, 532.K-diff Pairs in an Array, 268,Missing Number, 504.Base 7 ||
 |https://github.com/Brady31027/leetcode/blob/master/reports/bit_manipulation.pdf | |
 |136.Single Number, 137.Single Number II, 190.Reverse Bits, 191.Number of 1 Bits, 201.Bitwise AND of Number Range, 231.Power of Two, 260.Single Number III, 268.Missing Number, 318.Maximum Product of Word Lengths, 342.Power of Four, 371.Sum of Two Integers, 389.Find the Difference, 393.UTF-8 Validation, 401.Binary Watch, 421.Maximum XOR of Two Numbers in an Array, 461.Hamming Distance, 462.Minimum Moves to Equal Array Elements II, 477.Total Hamming Distance | 2017/05/08 |
+|https://github.com/Brady31027/leetcode/blob/master/reports/linked_list.pdf | |
+|21.Merge Two Sorted Lists, 24.Swap Nodes in Pairs, 83.Remove Duplicates from Sorted List, 82.Remove Duplicates from Sorted List II, 206.Reverse Linked List, 92.Reverse Linked List II, 234.Palindrome Linked List, 237.Delete Node in a Linked List, 203.Remove Linked List Elements, 160.Intersection of Two Linked Lists, 2.Add Two Numbers, 61.Rotate List, 445.Add Two Numbers II | |
