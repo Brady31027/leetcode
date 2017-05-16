@@ -4,24 +4,20 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: bool
         """
-        def isValid(inputList):
-            outputList = filter(lambda x: x != '.', inputList)
-            return True if len(set(outputList)) == len(outputList) else False
-        
-        # check rows and columns    
-        for i in xrange(9):
-            if not isValid( [ board[i][j] for j in xrange(9)] ) \
-                or not isValid(board[j][i] for j in xrange(9) ):
-                    return False
-                    
-        # check grid
-        for bigRow in xrange(3):
-            for bigCol in xrange(3):
-                if not isValid( [ board[row][col] for row in xrange(bigRow * 3, bigRow * 3 + 3) \
-                                                  for col in xrange(bigCol * 3, bigCol * 3 + 3) ] ):
-                    return False    
+        rowBook = [ set() for _ in xrange(9)]
+        colBook = [ set() for _ in xrange(9)]
+        gridBook = [ set() for _ in xrange(9)]
+        for row in xrange(9):
+            for col in xrange(9):
+                if board[row][col] == '.':
+                    continue
+                
+                grid = (row / 3) * 3 + (col / 3)
+                if board[row][col] in rowBook[row] or \
+                   board[row][col] in colBook[col] or \
+                   board[row][col] in gridBook[grid]:
+                       return False
+                rowBook[row].add(board[row][col])
+                colBook[col].add(board[row][col])
+                gridBook[grid].add(board[row][col])
         return True
-                    
-        
-     
-            
