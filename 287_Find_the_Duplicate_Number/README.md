@@ -5,3 +5,15 @@ You must not modify the array (assume the array is read only).
 You must use only constant, O(1) extra space.
 Your runtime complexity should be less than O(n2).
 There is only one duplicate number in the array, but it could be repeated more than once.
+  
+**Hint**:  
+  
+Domain of value: 1~n
+  
+E.g. n = 7  
+  
+| [0] | [1] | [2] | [3] | [4] | [5] | [6] | [7] |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|  1  |  2  |  3  |  4  |  5  |  6  |  7  |  5  |
+  
+Conclusion: redundant number is the begin of the circle!    
