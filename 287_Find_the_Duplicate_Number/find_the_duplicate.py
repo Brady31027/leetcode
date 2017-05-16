@@ -4,12 +4,12 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        low, high = 0, len(nums) - 1
-        while low <= high:
-            mid = (low + high) / 2
-            cnt = sum( num <= mid for num in nums)
-            if cnt > mid:
-                high = mid - 1
-            else:
-                low = mid + 1
-        return low
+        slow, fast = nums[0], nums[nums[0]]
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+        fast = 0
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[fast]
+        return slow
