@@ -5,11 +5,10 @@ class Solution(object):
         :rtype: int
         """
         # Sieve of Eratorsthenes
-        if n <= 2: return 0
-        primeBook = [1] * n # total (n) elements from 0 to (n-1)
-        primeBook[0] = primeBook[1] = 0
-        for base in xrange(2, n):
-            if primeBook[base]:
-                for derive in xrange(base * 2, n, base):
-                    primeBook[derive] = 0
-        return sum(primeBook)
+        if n < 3: return 0
+        primes = [True] * n
+        primes[0] = primes[1] = False
+        for i in range(2, int(n ** 0.5) + 1):
+            if primes[i]:
+                primes[i * i: n: i] = [False] * len(primes[i * i: n: i])
+        return sum(primes)
