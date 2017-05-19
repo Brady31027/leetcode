@@ -12,3 +12,6 @@ Output:
 </pre>
 Explanation:
 The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
+  
+**Hint**
+if n points are in the same dis, there are total n * (n-1) combinations
