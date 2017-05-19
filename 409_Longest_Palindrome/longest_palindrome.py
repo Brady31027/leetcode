@@ -6,5 +6,5 @@ class Solution(object):
         """
         leftOne = 0
         for char, appearingCnt in collections.Counter(s).iteritems():
-            leftOne += int(appearingCnt % 2 == 1)
+            leftOne += (appearingCnt & 1)
         return len(s) - leftOne + int(leftOne > 0)    
