@@ -5,17 +5,20 @@ class Solution(object):
         :type p: str
         :rtype: List[int]
         """
-        counterS, counterP = collections.Counter(), collections.Counter(p)
-        start, end, ans = 0, 0, []
-        patternSize = len(p)
-        for i in xrange(len(s)):
-            counterS[ s[i] ] += 1
-            end += 1
-            if end - start > patternSize:
-                counterS[ s[start] ] -= 1
-                if counterS[ s[start] ] == 0:
-                    del counterS[ s[start] ]
-                start += 1
-            if counterS == counterP:
+        patternHash = collections.Counter(p)
+        count, patternLength, start, end, ans = len(p), len(p), 0, 0, []
+        for i in range(len(s)):
+            if patternHash[s[i]] > 0:
+                count -= 1
+            incomingChar = s[i]
+            patternHash[incomingChar], end = patternHash[incomingChar] - 1, end + 1
+            
+            if count == 0:
                 ans.append(start)
-        return ans        
+            
+            if end - start >= patternLength:
+                if patternHash[s[start]] >= 0:
+                    count += 1
+                fadeOutChar = s[start]
+                patternHash[fadeOutChar], start =  patternHash[fadeOutChar] + 1, start + 1
+        return ans
