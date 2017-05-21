@@ -38,3 +38,6 @@
 |21.Merge Two Sorted Lists, 24.Swap Nodes in Pairs, 83.Remove Duplicates from Sorted List, 82.Remove Duplicates from Sorted List II, 206.Reverse Linked List, 92.Reverse Linked List II, 234.Palindrome Linked List, 237.Delete Node in a Linked List, 203.Remove Linked List Elements, 160.Intersection of Two Linked Lists, 2.Add Two Numbers, 61.Rotate List, 445.Add Two Numbers II | |
 |https://github.com/Brady31027/leetcode/blob/master/reports/two_ptrs.pdf | |
 |19.Remove Nth Node From End of List, 86.Partition List, 141.Linked List Cycle, 142.Linked List Cycle II, 143.Reorder List, 167.Two Sum II - Input array is sorted, 283.Move Zeroes, 287.Find the Duplicate Number, 344.Reverse String, 345.Reverse Vowels of a String, 349.Intersection of Two Arrays, 350.Intersection of Two Arrays II, 457.Circular Array Loop ||
+|https://github.com/Brady31027/leetcode/blob/master/reports/hash_table.pdf | |
+|36.Valid Sudoku, 202.Happy Number, 204.Count Primes, 205.Isomorphic Strings, 290.Word Pattern, 299.Bulls and Cows, 49.Group Anagrams, 424.Longest Repeating Character Replacement, 454.4 Sum II, 387.First Unique Character in a String, 409.Longest Palindrome, 438.Find All Anagrams in a String, 447.Number of Boomerangs, 3.Longest Substring Without Repeating Characters, 187.Repeated DNA Sequences, 388.Longest Absolute File Path, 473.Matchsticks to Square, 554.Brick Wall | |
+
