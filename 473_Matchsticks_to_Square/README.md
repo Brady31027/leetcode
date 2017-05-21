@@ -16,3 +16,5 @@ Output: false
 
 Explanation: You cannot find a way to form a square with all the matchsticks.
 </pre>
+  
+Follow-up: How to adopt hash table?  
