@@ -14,7 +14,6 @@ class Solution(object):
                 ans[buzz - 1] = "Buzz"
                 buzz += 5
         while fizzbuzz <= n:
-            if fizzbuzz <= n:
-                ans[fizzbuzz - 1] = "FizzBuzz"
-                fizzbuzz += 15
+            ans[fizzbuzz - 1] = "FizzBuzz"
+            fizzbuzz += 15
         return ans
