@@ -78,3 +78,6 @@ In descending order:
   
 #### Conclusion
 Given input n, the most significant digit has **(n-1)*(n-2)** options
+<pre>
+(n-1)*(n-2) can be calculated by math.factorial(n-1)
+</pre>
