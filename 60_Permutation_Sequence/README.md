@@ -84,7 +84,6 @@ Given input n, the most significant digit has **(n-1)*(n-2)** options
 
 * Algorithm
   * Pick a digit from the candidates list by calculating k/math.factorial(n-1)
-  * No repeated digits, so remove the picked digit from the candidates list
   * Update k = k % facorial because we've narrowed down the scope
   * Update n -= 1 because the number of candidates will decrease one by one
   * Update candidates = candidates[:picked_index] + candidates[picked_index+1:]
