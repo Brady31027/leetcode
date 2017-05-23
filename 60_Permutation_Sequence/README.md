@@ -89,4 +89,4 @@ Given input n, the most significant digit has **(n-1)*(n-2)** options
   * Update n -= 1 because the number of candidates will decrease one by one
   * Update candidates = candidates[:picked_index] + candidates[picked_index+1:]
   * Update factorial by calculating (n-1)*(n-2) or math.factorial(n-1)
-  * Loop again and again if len(candidates) > 0 which means that all the digits are picked
+  * Loop again and again if len(candidates) > 0 // until all digits are picked
