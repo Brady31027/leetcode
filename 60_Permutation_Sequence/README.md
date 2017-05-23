@@ -81,7 +81,8 @@ Given input n, the most significant digit has **(n-1)*(n-2)** options
 <pre>
 (n-1)*(n-2) can be calculated by math.factorial(n-1)
 </pre>
-
+* Trap
+  * Convert k to 0-based
 * Algorithm
   * Pick a digit from the candidates list by calculating k/math.factorial(n-1)
   * Update k = k % facorial because we've narrowed down the scope
