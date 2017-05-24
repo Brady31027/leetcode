@@ -20,5 +20,14 @@ Example 2:
 </pre>
 Binary tree [1,2,3], return false.  
   
+**Algorithm**
+* Use a stack to maintain the traversed nodes
+* If root has left child, go left to the leaf
+  * This is where we can reach the minimal value in a BST
+* If current root is a leaf and there is no left child, we start to pop from stack
+  * The popped node is the parent of the current root, so the popped node  should be greater than current root which is a leaf
+  * Update root to the right child of the popped node  
+* The whold algorithm needs to traverse all nodes in a BST, thus the complexity is O(n)  
+   
 **Follow-up**
 * How to solve it applying recursive approach ?
