@@ -77,7 +77,7 @@ In descending order:
 * leading 2: x6
   
 #### Conclusion
-Given input n, the most significant digit has **(n-1)*(n-2)** options
+Given input n, every digit will be followed by **(n-1)*(n-2)** options
 <pre>
 (n-1)*(n-2) can be calculated by math.factorial(n-1)
 </pre>
