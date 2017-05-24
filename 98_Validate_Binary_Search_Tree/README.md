@@ -18,4 +18,7 @@ Example 2:
    / \
   2   3
 </pre>
-Binary tree [1,2,3], return false.
+Binary tree [1,2,3], return false.  
+  
+**Follow-up**
+* How to solve it applying recursive approach ?
