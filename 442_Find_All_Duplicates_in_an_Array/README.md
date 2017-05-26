@@ -17,7 +17,14 @@ Output:
   
 Note:  
 
-Following snipe of code is doing sorting  
+* Use element value as index to access the array linearly
+* If we meet a new element, negate it. E.g. 3 -> -3
+* If we meet an existed element, we will read a negative value. And that's the ans
+  
+--  
+   
+Following snipe of code is doing sorting.
+It's interesting but isn't helpful.lol 
 ```python
   i = 0
   while i < len(nums):
