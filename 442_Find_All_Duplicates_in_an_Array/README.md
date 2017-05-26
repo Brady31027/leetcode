@@ -12,3 +12,17 @@ Input:
 Output:
 [2,3]
 </pre>
+  
+***  
+  
+Note:  
+
+Following snipe of code is doing sorting  
+```python
+  i = 0
+  while i < len(nums):
+     if nums[i] != nums[nums[i]-1]:
+        nums[nums[i]-1], nums[i] = nums[i], nums[nums[i]-1] 
+     else:
+        i += 1
+```
