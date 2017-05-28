@@ -5,12 +5,12 @@ class Solution(object):
         :rtype: bool
         """
         if len(nums) < 3: return False
-        minimal = firstMin = secondMin = float("inf")
+        firstMin = secondMin = float("inf")
         for n in nums:
-            if n <= minimal:
-                minimal = n
+            if n <= firstMin:
+                firstMin = n
             elif n <= secondMin:
-                firstMin, secondMin = minimal, n
+                secondMin = n
             else:
                 return True
         return False
