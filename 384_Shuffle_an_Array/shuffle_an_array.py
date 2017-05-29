@@ -24,7 +24,7 @@ class Solution(object):
         """
         shuffleNums = list(self.workingNums)
         arrSize = len(shuffleNums)
-        for i in xrange(len(shuffleNums)):
+        for i in xrange(arrSize):
             anchor = random.randint(i, arrSize - 1)
             shuffleNums[i], shuffleNums[anchor] = shuffleNums[anchor], shuffleNums[i]
         return shuffleNums
