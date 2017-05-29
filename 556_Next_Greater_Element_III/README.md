@@ -10,3 +10,11 @@ Example 2:
 Input: 21
 Output: -1
 </pre>
+  
+***
+  
+Same as Next Permutation  
+* Find anchor
+* Swap anchor and the one which is greater than anchor from tail
+* Sort the tailing range
+ 
