@@ -9,3 +9,6 @@ For example,
 Given s = "Hello World",
 return 5.
 </pre>
+  
+**Note**  
+string.strip(): remove certain chars from both heading and tailing 
