@@ -17,4 +17,11 @@ Note: Numbers in the additive sequence cannot have leading zeros, so sequence 1,
 Given a string containing only digits '0'-'9', write a function to determine if it's an additive number.
 
 Follow up:
-How would you handle overflow for very large input integers?
+How would you handle overflow for very large input integers? 
+  
+***  
+   
+**Note**  
+* Use itertools.combinations() to enumerate all combinations
+* Use str(int(a)) != a to determine whether the input str containing leading 0s
+* Use str.startswith(pattern, index) to check whether it is additive
