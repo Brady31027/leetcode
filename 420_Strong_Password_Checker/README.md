@@ -33,4 +33,5 @@ Insertion, deletion or replace of any one character are all considered as one ch
   * step = deleteCnt + max(changeCnt, 3 - typeCnt)
   
 ***  
+* Recommanded solution: https://discuss.leetcode.com/topic/63341/simple-python-solution/2
 * Another solution: https://github.com/kamyu104/LeetCode/blob/master/Python/strong-password-checker.py
