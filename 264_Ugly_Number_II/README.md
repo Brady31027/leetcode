@@ -31,7 +31,7 @@ class Solution(object):
 ***  
 ** Observation and Regression  
 * All ugly numbers are based on certain known ugly numbers
-* E.g.
+* E.g.  
 | Known ugly   |  1  |  2  |  3  |  4  |  5  |  6  |  8  |
 |:------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1st iter x2  | 1*2 | 2*2 | 3*2 | 4*2 | 5*2 | 6*2 | 8*2 |
