@@ -32,3 +32,24 @@ Return: [1,3],[2,3]
 All possible pairs are returned from the sequence:
 [1,3],[2,3]
 </pre>  
+  
+***
+* Memory Limit Exceeded Solution
+```python
+class Solution(object):
+    def kSmallestPairs(self, nums1, nums2, k):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :type k: int
+        :rtype: List[List[int]]
+        """
+        if not nums1 or not nums2: return []
+        heap = [(n1 + n2, [n1, n2]) for n1 in nums1 for n2 in nums2]
+        heapq.heapify(heap)
+        ans = []
+        for i in xrange(min(k, len(nums1) * len(nums2))):
+            ans.append( heapq.heappop(heap)[1])
+        return ans
+```  
+  
