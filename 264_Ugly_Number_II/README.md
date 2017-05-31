@@ -29,7 +29,7 @@ class Solution(object):
             i += 1          
 ```  
 ***  
-** Observation and Regression  
+** Observation and Regression**  
 * All ugly numbers are based on certain known ugly numbers
 * E.g.  
   
