@@ -27,5 +27,7 @@ Insertion, deletion or replace of any one character are all considered as one ch
   * aA
     * aA1BCD -> x4
   * Conclusion: step = max(6 - totalCnt, 3 - typeCnt)
-* If s > 20
-  * Similar to the above case: step = max(totalCnt - 20, 3 - typeCnt)
+* If s >= 6
+  * deleteCnt = max(totalCnt - 20, 0)
+  * changeCnt = sum(r/3 for r in repeatCnt)
+  * step = deleteCnt + max(changeCnt, 3 - typeCnt)
