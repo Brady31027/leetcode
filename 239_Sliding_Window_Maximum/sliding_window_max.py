@@ -7,11 +7,11 @@ class Solution(object):
         """
         dq, ans = collections.deque(), []
         for i, v in enumerate(nums):
-            while dq and nums[ dq[-1] ] < v:
-                dq.pop()
+            while dq and nums[ dq[-1] ] < v: dq.pop()
             dq.append(i)
-            if i - dq[0] >= k:
-                dq.popleft()
-            if i >= k - 1:
-                ans.append(nums[dq[0]])
+            if i - dq[0] == k: dq.popleft()
+            if i >= k - 1: ans.append(nums[dq[0]])
         return ans
+                
+            
+            
