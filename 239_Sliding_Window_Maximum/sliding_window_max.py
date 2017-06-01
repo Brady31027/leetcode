@@ -5,11 +5,13 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        dq, ans = collections.deque(maxlen=k), []
-        for n in nums:
-            dq.append(n)
-            if len(dq) > k - 1:
-                ans.append(max(dq))
-        if not ans and dq: ans.append(max(dq))
+        dq, ans = collections.deque(), []
+        for i, v in enumerate(nums):
+            while dq and nums[ dq[-1] ] < v:
+                dq.pop()
+            dq.append(i)
+            if i - dq[0] >= k:
+                dq.popleft()
+            if i >= k - 1:
+                ans.append(nums[dq[0]])
         return ans
-        
