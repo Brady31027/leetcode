@@ -31,3 +31,9 @@ Example 3:
 "9,#,#,1"
 Return false
 </pre>
+  
+***
+**Note**  
+* https://discuss.leetcode.com/topic/35976/7-lines-easy-java-solution?page=1 
+  * Use indegree and outdegree to determine whether it is valid
+  * Hold for pre-order and post-order, seems not fit for in-order
