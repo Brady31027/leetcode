@@ -12,3 +12,30 @@ s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 </pre>
+  
+***  
+**Analysis
+* If we read digits [0-9]
+  * n = n * 10 + int(c)
+* If we read '['
+  * Digits are finished  
+    ```python
+      numStack.append(n)
+      n = 0  
+    ```
+  * Save current value in mainStack to bakStack and ready for the next char  
+    ```python
+     bakStack.append(mainStack)
+     mainStack = []
+    ```  
+* If we read char
+  * mainStack.append(c)
+* If we read ']' 
+  * A sequence is over, composite the substring sequence  
+  ```python
+   bakStack[-1].extend(mainStack * numStack.pop())
+  ```  
+  * After composition, restore to mainStack  
+  ```python
+   mainStack = bakStack.pop()  
+  ```  
