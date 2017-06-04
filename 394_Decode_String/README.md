@@ -14,7 +14,7 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 </pre>
   
 ***  
-**Analysis
+**Analysis**
 * If we read digits [0-9]
   * n = n * 10 + int(c)
 * If we read '['
