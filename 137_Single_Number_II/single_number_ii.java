@@ -1,20 +1,16 @@
 public class Solution {
     public int singleNumber(int[] nums) {
-        Arrays.sort(nums);
-        int prev = nums[0];
-        int ref = 1;
-        for (int i = 1; i < nums.length; ++i) {
-            if (nums[i] != prev) {
-                if (ref < 3) {
-                    return prev;
-                } else {
-                    prev = nums[i];
-                    ref = 1;
+        int ans = 0;
+        for (int i = 0; i < 32; ++i) {
+            int sum = 0;
+            for (int j = 0; j < nums.length; ++j) {
+                if ((nums[j] >> i & 1) == 1) {
+                    sum++;
                 }
-            } else {
-                ref += 1;
             }
+            sum %= 3;
+            ans |= (sum << i);
         }
-        return prev;
+        return ans;
     }
 }
