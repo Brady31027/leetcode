@@ -4,10 +4,6 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        result = re.findall('L{3,}', s)
-        if len(result) > 0: return False
-        result = re.findall('A', s)
-        if len(result) > 1: return False 
+        count = collections.Counter(re.findall('LLL|A', s))
+        if count['A'] > 1 or count['LLL'] > 0: return False 
         return True
-        
-        
